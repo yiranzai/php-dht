@@ -13,25 +13,25 @@ class Dht implements \JsonSerializable
     /**
      * @var string
      */
-    private $algo = self::DEFAULT_ALGO;
+    protected $algo = self::DEFAULT_ALGO;
     /**
      * all node cache
      *
      * @var array
      */
-    private $locations = [];
+    protected $locations = [];
     /**
      * virtual node num
      *
      * @var int
      */
-    private $virtualNodeNum = 24;
+    protected $virtualNodeNum = 24;
     /**
      * entity node cache
      *
      * @var
      */
-    private $nodes = [];
+    protected $nodes = [];
 
     /**
      * Hash constructor.
@@ -130,7 +130,7 @@ class Dht implements \JsonSerializable
      * @param string $str
      * @return int
      */
-    private function time33(string $str): int
+    protected function time33(string $str): int
     {
         $hash = 0;
         $str  = md5($str);
