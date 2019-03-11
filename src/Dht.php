@@ -144,9 +144,9 @@ class Dht implements \JsonSerializable
     /**
      * 寻找字符串所在的机器位置
      * @param string $key
-     * @return bool|mixed
+     * @return string
      */
-    public function getLocation(string $key)
+    public function getLocation(string $key): string
     {
         if (empty($this->locations)) {
             throw new \RuntimeException('This nodes is empty, please add a node');
@@ -199,10 +199,10 @@ class Dht implements \JsonSerializable
     /**
      * delete a entity node
      *
-     * @param $node
+     * @param string $node
      * @return Dht
      */
-    public function deleteEntityNode($node): self
+    public function deleteEntityNode(string $node): self
     {
         foreach ($this->nodes[$node] as $v) {
             unset($this->locations[$v]);
