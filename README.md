@@ -1,5 +1,9 @@
 # php-dht
 
+<p align="center">
+  <img src="https://cdn.yiranzai.cn/yiranzai/logo/mouse/mouse4.png" alt="" width="20%">
+</p>
+
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
 [![Build Status][ico-travis]][link-travis]
